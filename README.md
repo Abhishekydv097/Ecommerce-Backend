@@ -1,37 +1,97 @@
-Node.js Server Setup: The project sets up a Node.js server to handle billing operations.
+<div align="center">
 
-RESTful APIs: The server exposes APIs based on REST principles to perform various billing functionalities.
+# Node.js Billing System
 
-User Registration: Users can create accounts with their credentials using the POST /api/users/register endpoint.
+A Node.js server for a user-friendly billing system that handles invoicing, payments, and financial transactions efficiently.
 
-Fetch Products and Services: The server provides the GET /api/products endpoint to fetch information about all products and services with their prices.
+</div>
 
-Cart Management: Users can add items to their cart using POST /api/cart/addToCart and remove items from the cart using POST /api/cart/removeFromCart.
+## Table of Contents
 
-View Total Bill: The server calculates taxes for each item individually and displays a detailed view of the total bill during checkout using GET /api/cart/viewTotalBill.
+- [Introduction](#introduction)
+- [Features](#features)
+- [Prerequisites](#prerequisites)
+- [Installation](#installation)
+- [Usage](#usage)
+- [API Endpoints](#api-endpoints)
+- [Testing](#testing)
+- [Contribution](#contribution)
+- [Logging](#logging)
+- [Security](#security)
 
-Confirm Order: Users can confirm their orders and complete the billing process using the POST /api/orders/confirmOrder endpoint.
 
-MVC Architecture: The project follows the Model-View-Controller (MVC) pattern for better organization and maintainability of code.
+## Introduction
 
-MongoDB Database: MongoDB is used as the database to store user information, product details, cart items, and orders.
+An online billing system is essential for businesses to manage their invoicing, payments, and financial transactions efficiently. This project sets up a Node.js server to handle billing operations for a company. The server exposes APIs based on REST principles and handles different scenarios that may arise during billing processes.
 
-Testing (Optional): Test cases can be added to ensure the proper functionality of the server APIs.
+## Features
 
-Contributing Guidelines: The project includes guidelines for contributors to encourage collaboration and enhancements.
+- User Registration
+- Fetch Products and Services Information
+- Cart Management (Add/Remove Items)
+- View Total Bill (Detailed breakdown of price, quantity, and tax on each item)
+- Confirm Order
 
-License: The project is licensed under the MIT License, allowing free use, modification, and distribution of the code.
+## Demo
 
-Overall, this project provides a comprehensive and efficient solution for managing billing operations for the company, offering user-friendly APIs for account management, cart operations, and order confirmation.
+![Project Demo](project-demo.gif)
 
-Deployment: Instructions on how to deploy the server to a hosting platform or cloud service can be provided to ensure accessibility.
+## Prerequisites
 
-Logging: Logging can be implemented to record server activities and monitor system performance.
+Before running the server, make sure you have the following installed:
 
-Security Measures: The server can employ security measures such as input sanitization, secure password storage, and SSL encryption for secure data transfer.
+- Node.js (v14.x or higher)
+- MongoDB (v4.x or higher)
 
-Error Logging: In addition to user-friendly error messages, error logging can be set up to capture and analyze server errors for troubleshooting and improvements.
+## Installation
 
-Rate Limiting (Optional): To prevent abuse or excessive API calls, rate limiting can be applied to restrict the number of requests per time period from a single IP address.
+1. Clone the repository.
 
-Documentation: A comprehensive API documentation using tools like Swagger can be provided to help users understand and use the server's functionalities effectively.
+    git clone https://github.com/Abhishekydv097/Plotline_EcommerceBackend_Abhishek
+
+
+2. Install dependencies.
+
+    npm i
+
+
+## Usage
+
+1. Start the MongoDB server.
+
+
+2. Start the Node.js server.
+
+npm run dev
+
+The server will run at by default and reflects server and mongoDB is connected at terminal.
+
+## API Endpoints
+
+- POST /api/users/register - User Registration
+- GET /api/products - Fetch Products and Services Information
+- POST /api/cart/addToCart - Add a Product or Service to the Cart
+- POST /api/cart/removeFromCart - Remove a Product or Service from the Cart
+- GET /api/cart/viewTotalBill - View Total Bill (Detailed breakdown of price, quantity, and tax on each item)
+- POST /api/orders/confirmOrder - Confirm Order
+
+
+## Contributions
+
+https://github.com/Abhishekydv097
+
+## Logging
+
+Logging is implemented to record server activities and monitor system performance. Logs are stored in logs/server.log.
+
+## Security
+
+- Input Sanitization
+- Secure Password Storage
+- SSL Encryption for Data Transfer
+
+## Error Logging
+
+Error logging is set up to capture and analyze server errors for troubleshooting and improvements. Errors are stored in logs/error.log.
+
+
