@@ -14,8 +14,6 @@ A Node.js server for a user-friendly billing system that handles invoicing, paym
 - [Installation](#installation)
 - [Usage](#usage)
 - [API Endpoints](#api-endpoints)
-- [Testing](#testing)
-- [Contribution](#contribution)
 - [Logging](#logging)
 - [Security](#security)
 
@@ -32,10 +30,6 @@ An online billing system is essential for businesses to manage their invoicing, 
 - View Total Bill (Detailed breakdown of price, quantity, and tax on each item)
 - Confirm Order
 
-## Demo
-
-![Project Demo](project-demo.gif)
-
 ## Prerequisites
 
 Before running the server, make sure you have the following installed:
@@ -46,15 +40,19 @@ Before running the server, make sure you have the following installed:
 ## Installation
 
 1. Clone the repository.
-
+    ```
     git clone https://github.com/Abhishekydv097/Plotline_EcommerceBackend_Abhishek
-
+    ```
 
 2. Install dependencies.
-
+    ```
     npm i
+    ```
 
-
+3. Run the server
+   ```
+   npm run dev
+   ```
 ## Usage
 
 1. Start the MongoDB server.
@@ -68,12 +66,23 @@ The server will run at by default and reflects server and mongoDB is connected a
 
 ## API Endpoints
 
-- POST /api/users/register - User Registration
-- GET /api/products - Fetch Products and Services Information
-- POST /api/cart/addToCart - Add a Product or Service to the Cart
-- POST /api/cart/removeFromCart - Remove a Product or Service from the Cart
-- GET /api/cart/viewTotalBill - View Total Bill (Detailed breakdown of price, quantity, and tax on each item)
-- POST /api/orders/confirmOrder - Confirm Order
+- POST /api/products - Create a Product (Admin)
+- GET /api/products - Get all products
+- PUT /api/products/:productId - Update Product (Admin)
+- DELETE /api/products/:productId - Delete Product (Admin)
+- GET /api/products/:productId - Get Product Details
+
+- POST /api/users/register - Register User
+- POST /api/users/login - Login User
+- GET /api/users/logout - Logout User
+
+- GET /api/users - Get all users (Admin)
+
+- POST /api/orders - Create New Order
+- GET /api/orders - Get logged-in user order
+- GET /api/orders/:orderId - Get Single Order (Admin)
+- DELETE /api/orders/:orderId - Delete Order
+
 
 
 ## Contributions
@@ -86,12 +95,11 @@ Logging is implemented to record server activities and monitor system performanc
 
 ## Security
 
-- Input Sanitization
-- Secure Password Storage
-- SSL Encryption for Data Transfer
+- Secure Password Storage(using SHA-25)
+- Bycrypt for encrypting passwords
 
 ## Error Logging
 
-Error logging is set up to capture and analyze server errors for troubleshooting and improvements. Errors are stored in logs/error.log.
+Error logging is set up to capture and analyze server errors for troubleshooting and improvements. Errors are handled efficientlly.
 
 
