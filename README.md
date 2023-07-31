@@ -1,6 +1,6 @@
 <div align="center">
 
-# Node.js Billing System
+# Node.js Ecommerce Billing System
 
 A Node.js server for a user-friendly billing system that handles invoicing, payments, and financial transactions efficiently.
 
@@ -101,7 +101,7 @@ Logging is implemented to record server activities and monitor system performanc
 
 Error logging is set up to capture and analyze server errors for troubleshooting and improvements. Errors are handled efficientlly.
 
-## Screen Shots of Outputs
+## Screen-Shot of outputs
 
 - Getting order details.
 
