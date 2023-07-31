@@ -16,6 +16,7 @@ A Node.js server for a user-friendly billing system that handles invoicing, paym
 - [API Endpoints](#api-endpoints)
 - [Logging](#logging)
 - [Security](#security)
+- [Screen-Shot of outputs](#screenshot-ouputs)
 
 
 ## Introduction
@@ -60,8 +61,6 @@ Before running the server, make sure you have the following installed:
 
 2. Start the Node.js server.
 
-npm run dev
-
 The server will run at by default and reflects server and mongoDB is connected at terminal.
 
 ## API Endpoints
@@ -102,4 +101,33 @@ Logging is implemented to record server activities and monitor system performanc
 
 Error logging is set up to capture and analyze server errors for troubleshooting and improvements. Errors are handled efficientlly.
 
+## Screen Shots of Outputs
+
+- Getting order details.
+
+![Order Details](/ScreenShots/orderDetails.png)
+
+- Delete order.
+
+![Delete order](/ScreenShots/deleteOrder.png)
+
+
+- Getting order details ADMIN only.
+
+![Order Details Admin](/ScreenShots/orderdetails_adminOnly.png)
+
+
+- Session Token generated at terminal.
+
+![tokenTerminal](/ScreenShots/tokenTerminal.png)
+
+
+- Session Token generated at postman.
+
+![Order Details](/ScreenShots/orderDetails.png)
+
+
+- Getting user logged out
+
+![userLogout](/ScreenShots/userLogout.png)
 
